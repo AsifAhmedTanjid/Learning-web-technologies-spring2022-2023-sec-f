@@ -1,0 +1,6 @@
+admin|12345678|Asif Ahmed|asifahmed@gmail.com|Male|1999-12-01|admin
+customer|12345678|Asif Ahmed Tanjid|asifahmedtanjid11@gmail.com|Male|1999-12-31|customer
+deliveryman|12345678|Asif Tanjid|asifahmednirob45@gmail.com|Male|2023-03-01|deliveryman
+vendor|12345678|Asif Ahmed Tanj|asifahmednirob43@gmail.com|Male|2023-03-08|vendor
+vendor1|12345678|aaaa|asifahmednirob40@gmail.com|Male|2023-03-01|customer
+sanju|12345678|Sajid|asifahmednirob4343@gmail.com|Male|2023-03-01|customer
