@@ -2,6 +2,7 @@
 require_once '../models/usermodel.php';
     session_start();
     if(isset($_REQUEST['submit'])){
+        
 
         
         $username = $_REQUEST['username']; 
