@@ -17,7 +17,7 @@ require_once '../models/usermodel.php';
             $filename = $_SESSION['username'].time().$_FILES['file']['name'];
 
         $src = $_FILES['file']['tmp_name'];
-            $des = "../assets/".$filename;
+            $des = $filename;
             move_uploaded_file($src,$des);
             $user = ['username'=> $username,'profilepicture'=> $filename];
             $status = editprofilepicture($user);
