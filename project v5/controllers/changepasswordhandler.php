@@ -12,7 +12,7 @@ require_once '../models/usermodel.php';
        
 
 
-        if($password == $currentpassword) {
+         
 
             if($newpassword == $retypenewpassword) {
 
@@ -45,7 +45,7 @@ require_once '../models/usermodel.php';
             echo "current password is wrong";
         }
     
-}
+
     else{
         echo "invalid request...";
     }
