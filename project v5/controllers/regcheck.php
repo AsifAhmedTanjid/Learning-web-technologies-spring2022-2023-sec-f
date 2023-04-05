@@ -2,6 +2,7 @@
 require_once "../models/usermodel.php";
     session_start();
     if(isset($_REQUEST['submit'])){
+        
 
      
         $username = $_REQUEST['username']; 
@@ -37,7 +38,7 @@ require_once "../models/usermodel.php";
         
         
 
-        else if(strtotime($dob) > strtotime("-16 years")){
+        else if(strtotime($dob) > strtotime("time()")){
             echo "You must be at least 16 years old to register";
         }
         else{
