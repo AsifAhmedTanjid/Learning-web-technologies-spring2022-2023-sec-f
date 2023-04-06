@@ -3,7 +3,7 @@ session_start();
 ?>
 <html>
 <head>
-    <title>add</title>
+    <title>edit</title>
 </head> 
 <body>
     <table>
@@ -50,7 +50,7 @@ session_start();
         </tr>
         <tr>
             <td>
-                <input type="submit" name="submit" value="submit">
+                <input type="submit" name="submit" value="SAVE">
             </td>
         </tr>
         </form>

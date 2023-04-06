@@ -12,8 +12,8 @@
         $con = getConnection();
         
         $sql = "UPDATE products
-        SET Name = '{$products['name']}', buyingprice = '{$products['buyingprice']}', sellingprice ='{$products['sellingprice']}'
-        WHERE id = '{$_products['id']}';";
+        SET Name = '{$products['name']}', buyingprice = '{$products['buyingprice']}', sellingprice ='{$products['sellingprice']}', profit ='{$products['profit']}'
+        WHERE id = '{$products['id']}';";
 
         $status = mysqli_query($con, $sql);
        
@@ -70,6 +70,39 @@
 
    
     function deleteproduct ($id){
+        // $con = getConnection();
+        
+        // $sql = "DELETE FROM products WHERE id='$id';";
+
+        // $status = mysqli_query($con, $sql);
+       
+        // return $status;
+        $con = getConnection();
+
+        $sql = "select * from products where id='$id';";
+        $result = mysqli_query($con, $sql);
+        
+       
+       
+      
+        $count = mysqli_num_rows($result);
+        if($count == 1){
+            while($row = mysqli_fetch_assoc($result)){
+               
+    
+                $_SESSION['id']= $row['id'];
+                       $_SESSION['name']= $row['Name'];
+                       $_SESSION['buyingprice']= $row['buyingprice'];
+                       $_SESSION['sellingprice']= $row['sellingprice'];
+                    
+       
+            }
+            return $result;
+        }
+    }
+
+    
+    function deleteproducts ($id){
         $con = getConnection();
         
         $sql = "DELETE FROM products WHERE id='$id';";
@@ -77,6 +110,8 @@
         $status = mysqli_query($con, $sql);
        
         return $status;
+        
+        
     }
     function search ($search){
         $con = getConnection();

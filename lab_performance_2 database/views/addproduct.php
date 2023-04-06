@@ -4,7 +4,6 @@
 </head> 
 <body>
     <table>
-
 <tr>
     <td>
     <table>
@@ -48,7 +47,7 @@
         </tr>
         <tr>
             <td>
-                <input type="submit" name="submit" value="submit">
+                <input type="submit" name="submit" value="SAVE">
             </td>
         </tr>
         </form>
@@ -56,7 +55,6 @@
     </fieldset>
     </td>
 </tr>
-
     </table>
 </body>
 </html>

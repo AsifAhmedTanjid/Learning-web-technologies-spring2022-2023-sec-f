@@ -5,7 +5,7 @@ session_start();
 ?>
 <html>
 <head>
-    <title>add</title>
+    <title>display</title>
 </head> 
 <body>
     <table>

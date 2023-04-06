@@ -24,7 +24,12 @@ require_once '../models/productmodel.php';
             $status = editproduct($products);
                     if($status){
 
+                        $_SESSION['id']= $id;
+                        $_SESSION['name']= $name;
+                        $_SESSION['buyingprice']= $buyingprice;
+                        $_SESSION['sellingprice']= $sellingprice;
                         header('location: ../views/display.php');
+                        
                         
                     }else{
                         echo "DB error, try again";

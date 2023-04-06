@@ -6,7 +6,7 @@ require_once '../models/productmodel.php';
         
         $status = deleteproduct($id);
         if($status){
-            header('location: ../views/display.php'); 
+            header('location: ../views/deleteproduct.php'); 
         }else{
             echo "DB error, try again";
         }

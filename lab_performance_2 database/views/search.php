@@ -5,7 +5,7 @@ session_start();
 ?>
 <html>
 <head>
-    <title>add</title>
+    <title>search</title>
 </head> 
 <body>
     <table>
@@ -17,7 +17,7 @@ session_start();
             <li><a href="addproduct.php">add</a></li>
             
             <li><a href="display.php">display</a></li>
-            <li><a href="editproduct.php">edit</a></li>
+           
             <li><a href="search.php">search</a></li>
         </ul>
     </table>
@@ -29,6 +29,7 @@ session_start();
     <input type="text" name="searchproduct" value="">
     <input type="submit" name="submit" value="search by name">
     </form>
+    <hr>
     <table border="1">
                                     <tr> 
                                        
